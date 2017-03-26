@@ -1053,8 +1053,8 @@ function resizeBig(percent) {
   percent = Number(percent);
   var logo = getID("logo");
   if (percent < 100) {
-    logo.style.width = width * (percent / 100);
-    logo.style.height = height * (percent / 100);
+    logo.style.width = width * (percent / 100) + "px";
+    logo.style.height = height * (percent / 100 + "px");
     percent += 1;
     if (percent % 2 == 0) {
       move++;
